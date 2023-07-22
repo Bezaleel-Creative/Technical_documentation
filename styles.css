@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 main{
     display: grid;
@@ -111,12 +112,12 @@ var{
     .left{
         position: unset;
         width: 100%;
-        height: 50vh;
+        height: 40vh;
         border-right: 0;
     }
 
     .left ul{
-        height: 40vh;
+        height: 30vh;
         border: 1px solid #8a8989;
     }
 
