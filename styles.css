@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 220px auto;
+    gap: 10px;
+}
+
+h1, h2 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left{
+    position: fixed;
+    width: 220px;
+    border-right: 2px solid #8a8989;
+    height: 100vh;
+}
+
+h1 {
+    padding: 15px 20px;
+}
+
+.left ul {
+    overflow-y: scroll;
+    height: calc(100vh - 65px);
+}
+
+.left ul > li:not(.left ul > li:last-child) {
+    text-decoration: none;
+    list-style: none;
+    border-bottom: 1px solid #6b6b6b;
+}
+
+.left ul > li:first-child {
+    border-top: 1px solid #6b6b6b;
+}
+
+.left ul > li > a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    word-wrap: break-word;
+    color: #6b6b6b;
+    /* font-size: 10; */
+}
+
+.nav-link {
+    font-size: 13px;
+}
+
+.right {
+    padding: 10px;
+}
+
+h2 {
+    padding: 15px 0;
+}
+
+.main-section p {
+    color: #6b6b6b;
+    font-size: 12px;
+    line-height: 19px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.main-section ul li {
+    color: #6b6b6b;
+    font-size: 12px;
+    line-height: 19px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.example {
+    background-color: #e7e7e7;
+    width: 92%;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#eg {
+    padding: 0;
+    margin: 0;
+    font-size: 8px;
+    font-family: monospace;
+}
+
+code{
+    color: #6b6b6b;
+    display: block;
+}
+
+var{
+    color: #6b6b6b;
+}
+
+
+@media screen and (max-width: 550px){
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .left{
+        position: unset;
+        width: 100%;
+        height: 50vh;
+        border-right: 0;
+    }
+
+    .left ul{
+        height: 40vh;
+        border: 1px solid #8a8989;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .left ul > li > a {
+        padding: 5px 20px;
+    }
+
+    .main-section ul li {
+        margin-left: 40px;
+    }
+
+    .inner_list{
+        margin-left: 0px;
+    }
+}
